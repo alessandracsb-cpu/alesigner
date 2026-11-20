@@ -291,3 +291,30 @@ body.on-case { background: var(--board); background-image: none; }
 .old-shot { grid-template-columns: minmax(0, 540px) 1fr; }
 .old-scroll { max-width: 540px; }
 @media (max-width: 860px) { .old-shot { grid-template-columns: 1fr; } .old-scroll { max-width: none; } }
+
+/* abertura: comparador antes × depois */
+.ba-wrap { margin-top: var(--s-block); }
+.ba-compare { position: relative; aspect-ratio: 16 / 10; max-width: 100%; border-radius: 28px; overflow: hidden; background: #111; user-select: none; touch-action: pan-y; }
+.ba-compare img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+.ba-before { clip-path: inset(0 calc(100% - var(--pos)) 0 0); }
+.ba-handle { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 3px; margin-left: -1.5px; background: #fff; pointer-events: none; box-shadow: 0 0 0 1px #0002; }
+.ba-handle i { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 48px; height: 48px; border-radius: 50%; background: var(--lime); color: #121212; display: grid; place-items: center; font-style: normal; font-size: 20px; font-weight: 700; box-shadow: 0 8px 24px #0005; }
+.ba-tag { position: absolute; top: 16px; font-size: 12px; font-weight: 700; padding: 5px 12px; border-radius: 999px; pointer-events: none; }
+.ba-tag-before { left: 16px; background: #121212; color: #fff; }
+.ba-tag-after { right: 16px; background: var(--lime); color: #121212; }
+.ba-range { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: ew-resize; margin: 0; }
+.ba-range:focus-visible + * , .ba-compare:focus-within { outline: 3px solid #121212; outline-offset: 3px; }
+.ba-foot { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 12px; font-size: 14px; color: var(--c-text-2); }
+.ba-skip { font-weight: 700; color: #121212; text-decoration: none; padding: 9px 16px; border-radius: 999px; background: #fff; }
+.ba-skip:hover { background: var(--lime); }
+
+/* capítulo 07: destaque da assistente, curto */
+.ai-stat { background: #121212; color: #fff; border-radius: 22px; padding: 26px; display: grid; gap: 10px; align-content: start; }
+.ai-k { justify-self: start; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; background: var(--lime); color: #121212; }
+.ai-num { font-family: var(--display); font-weight: 800; font-size: clamp(56px, 6vw, 84px); line-height: .9; letter-spacing: -.04em; color: var(--lime); }
+.ai-stat p { font-size: 15px; line-height: 1.5; color: #ffffffd9; }
+
+/* capítulo 08: a plataforma como recompensa */
+.chapter.finale .chapter-meta h2 { font-size: clamp(44px, 6vw, 80px); }
+.chapter.finale .chapter-num { background: #121212; color: var(--lime); }
+.chapter.finale .lab { margin-top: 8px; }
