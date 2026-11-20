@@ -398,3 +398,19 @@ body.on-case { background: var(--board); background-image: none; }
 .hf-total .g { color: #1b7a3d; font-weight: 600; }
 .hf-total .t { border-top: 1px solid #e7ecf4; margin-top: 4px; padding-top: 8px; font-size: 13px; font-weight: 800; color: #0f1b33; font-family: var(--display); }
 @media (max-width: 960px) { .hf-row { grid-template-columns: 1fr; } }
+
+/* case dos cupons: critérios e roadmap */
+.criteria { background: #121212; color: #fff; border-radius: 22px; padding: 24px; display: grid; gap: 2px; align-content: start; }
+.crit-k { justify-self: start; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; background: var(--lime); color: #121212; margin-bottom: 10px; }
+.criteria div { display: grid; gap: 2px; padding: 12px 0; border-top: 1px solid #ffffff1f; }
+.criteria b { font-family: var(--display); font-size: 17px; }
+.criteria span { font-size: 14px; color: #ffffffb3; }
+.roadmap { background: #fff; border-radius: 22px; padding: 22px; display: grid; gap: 8px; align-content: start; }
+.rm-head, .rm-row { display: grid; grid-template-columns: 110px repeat(4, 1fr); gap: 6px; align-items: center; }
+.rm-head span { font-size: 11px; font-weight: 600; color: var(--c-text-2); text-align: center; }
+.rm-row > span { font-size: 13px; font-weight: 600; }
+.rm-row i { height: 26px; border-radius: 8px; background: #7d97ff; }
+.rm-note { font-size: 12px; color: var(--c-text-2); margin-top: 6px; }
+#page-case-cupons .scale-item .num { font-size: clamp(30px, 3.4vw, 46px); }
+#page-case-cupons .scale-item:nth-child(1) .num { font-size: clamp(64px, 8vw, 120px); }
+.criteria .crit-k { color: #121212; }
