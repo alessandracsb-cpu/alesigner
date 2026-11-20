@@ -465,3 +465,12 @@ body.on-case { background: var(--board); background-image: none; }
 .case-cover img { display: block; width: 100%; aspect-ratio: 16 / 8; object-fit: cover; object-position: 60% 35%; }
 .case-cover figcaption { font-size: 13px; color: var(--c-text-2); padding: 12px 18px; }
 @media (max-width: 700px) { .case-cover img { aspect-ratio: 4 / 3; } }
+
+/* capa do case dos cupons em polaroid com fita */
+.case-cover.polaroid-cover { position: relative; width: min(560px, 92%); margin: var(--s-block) auto 28px; background: #fff; border-radius: 4px; overflow: visible; padding: 16px 16px 58px; transform: rotate(-2deg); box-shadow: 0 24px 50px -24px #0007; }
+.polaroid-cover img { aspect-ratio: 4 / 3; border-radius: 2px; object-position: center; }
+.polaroid-cover figcaption { position: absolute; left: 0; right: 0; bottom: 16px; text-align: center; font-size: 15px; font-weight: 600; color: #3d3a35; padding: 0; }
+.polaroid-cover .tape { position: absolute; top: -16px; left: 50%; width: 130px; height: 34px; background: #ffe45cc9; transform: translateX(-50%) rotate(3deg); z-index: 2; }
+.photo-tall img { object-position: center; }
+.photo-wide { max-width: 640px; }
+.photo-wide img { aspect-ratio: auto; }
