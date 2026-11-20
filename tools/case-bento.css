@@ -556,7 +556,7 @@ body.cases-dark .cmp-lbls .la.on { background: #fff; color: #121212; }
 .lab-cta:hover { background: var(--lime); color: #121212; transform: translateY(-2px); }
 .lab-cta:hover .lab-cta-ic { background: #121212; color: var(--lime); }
 .lab-cta:hover small { color: #121212b3; }
-.lab-cta:hover .lab-cta-arrow { transform: translateY(3px); }
+.lab-cta:hover .lab-cta-arrow { transform: translate(2px, -2px); }
 .lab-cta:focus-visible { outline: 3px solid #7d97ff; outline-offset: 3px; }
 body.cases-dark .lab-cta { background: var(--lime); color: #121212; }
 body.cases-dark .lab-cta .lab-cta-ic { background: #121212; color: var(--lime); }
@@ -567,3 +567,22 @@ body.cases-dark .lab-cta small { color: #121212b3; }
 .ba-foot { flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 14px; margin-top: 16px; }
 .ba-foot .ba-cap { max-width: 70ch; }
 .ba-wrap .lab-cta { margin: 0 0 22px; }
+
+/* antes/depois dentro do topo do case */
+.case-hero .ba-wrap { margin: 36px 0 40px; }
+
+/* plataforma aberta numa janela por cima da página */
+.lab-modal { position: fixed; inset: 0; z-index: 1000; background: #121212e6; display: flex; flex-direction: column; padding: 16px; backdrop-filter: blur(4px); }
+.lab-modal[hidden] { display: none; }
+.lab-modal-bar { display: flex; align-items: center; gap: 12px; color: #fff; padding: 0 4px 12px; flex-wrap: wrap; }
+.lab-modal-t { font-size: 14px; margin-right: auto; } .lab-modal-t b { font-family: var(--display); font-size: 17px; }
+.lab-modal-dev { display: flex; background: #ffffff1f; border-radius: 999px; padding: 3px; }
+.lab-modal-dev button { border: 0; background: none; color: #fff; font: 600 13px var(--body); padding: 7px 14px; border-radius: 999px; cursor: pointer; }
+.lab-modal-dev button[aria-pressed="true"] { background: var(--lime); color: #121212; }
+.lab-modal-x { border: 0; width: 40px; height: 40px; border-radius: 50%; background: #fff; color: #121212; font-size: 16px; font-weight: 700; cursor: pointer; }
+.lab-modal button:focus-visible { outline: 3px solid var(--lime); outline-offset: 2px; }
+.lab-modal-body { flex: 1; display: flex; justify-content: center; min-height: 0; }
+.lab-modal-body iframe { width: 100%; height: 100%; border: 0; border-radius: 14px; background: #fff; transition: width .3s; }
+.lab-modal.mobile .lab-modal-body iframe { width: min(390px, 100%); }
+body.wos-modal-on { overflow: hidden; }
+@media (max-width: 700px) { .lab-modal { padding: 10px; } .lab-modal-dev { display: none; } }
