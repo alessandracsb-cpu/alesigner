@@ -1,3 +1,19 @@
+/* capítulo 01: dores de plataforma e de serviço */
+.pain-stack { display: grid; gap: 12px; }
+.before-panel.service { background: #fff !important; color: var(--ink) !important; }
+.before-panel.service .bp-title { background: var(--t-yellow) !important; }
+.before-panel.service .before-row { color: var(--c-text) !important; border-top-color: var(--c-line) !important; }
+.before-panel.service .x { color: #c2185b !important; }
+.seed-note { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; font-size: 15px; font-weight: 500; background: #121212; color: #fff; border-radius: 999px; padding: 10px 18px 10px 10px; width: fit-content; max-width: 100%; }
+.seed-note span { font-size: 12px; font-weight: 700; padding: 5px 12px; border-radius: 999px; background: var(--lime); color: #121212; }
+
+/* capítulo 02: perfis enxutos */
+.persona-mini { display: grid; gap: 12px; }
+.persona-mini blockquote { background: #fff; border-radius: 22px; padding: 22px; font-family: var(--display); font-weight: 600; font-size: 19px; line-height: 1.35; }
+.persona-mini blockquote:nth-child(1) { background: var(--note-y); }
+.persona-mini blockquote:nth-child(2) { background: #7d97ff; }
+.persona-mini .ptag { display: block; width: fit-content; font-family: var(--body); font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; background: #121212; color: #fff; margin-bottom: 12px; }
+
 /* ============ PÁGINAS DE CASE · bento moderno, coerente com a home ============
    3 níveis: (1) resultados em blocos coloridos grandes; (2) um destaque colorido por capítulo;
    (3) texto corrido calmo. Fundo liso na cor da home, cantos de 22px, nada torto. */
@@ -270,3 +286,8 @@ body.on-case { background: var(--board); background-image: none; }
   .bp-detail { position: relative; right: auto; top: auto; transform: none; width: 100%; margin-top: 14px; }
   .bp-teaser figcaption { max-width: none; }
 }
+
+/* sistema antigo: no tamanho em que a imagem fica nítida */
+.old-shot { grid-template-columns: minmax(0, 540px) 1fr; }
+.old-scroll { max-width: 540px; }
+@media (max-width: 860px) { .old-shot { grid-template-columns: 1fr; } .old-scroll { max-width: none; } }
