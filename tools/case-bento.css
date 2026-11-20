@@ -324,3 +324,18 @@ body.on-case { background: var(--board); background-image: none; }
 .case-hero h1.h-split { max-width: none; }
 .h-split > span { display: block; white-space: nowrap; }
 @media (max-width: 600px) { .h-split > span { white-space: normal; } }
+
+/* case dos cupons */
+.flow.four { grid-template-columns: repeat(4, 1fr); margin-bottom: 16px; }
+.flow.four .flow-step:nth-child(4) { background: var(--lime); }
+@media (max-width: 860px) { .flow.four { grid-template-columns: 1fr 1fr; } }
+.shot-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: start; }
+.sol-intro { font-size: 18px; color: var(--c-text); margin-bottom: 16px; }
+.sol-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; align-items: start; }
+.sol { background: #fff; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column; }
+.sol img { width: 100%; height: auto; display: block; background: #eef2fb; }
+.sol figcaption { padding: 18px 20px 22px; font-size: 15px; line-height: 1.5; color: var(--c-text); }
+.sol figcaption b { display: block; font-family: var(--display); font-size: 19px; color: #121212; margin-bottom: 6px; }
+@media (max-width: 860px) { .sol-grid { grid-template-columns: 1fr; } }
+#page-case-cupons .scale-item:nth-child(1) .num { font-size: clamp(52px, 6.4vw, 96px); }
+#page-case-cupons .scale-item .num { white-space: nowrap; }
