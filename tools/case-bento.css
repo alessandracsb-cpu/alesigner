@@ -1,3 +1,5 @@
+/* wireframes menores, dentro da validação (ficam no fim do arquivo para vencer .hf-row) */
+
 /* fotos da imersão (case dos cupons) */
 .photo-tall img { aspect-ratio: 1 / 1; object-fit: cover; object-position: center 35%; }
 .photo-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
@@ -436,7 +438,7 @@ body.on-case { background: var(--board); background-image: none; }
 .wf .hf-tv.coral, .wf .hf-tv.blue, .wf .hf-tv.green { background: #e2e2df; color: #2b2b2b; }
 .wf .hf-ti span, .wf .hf-big > span, .wf .hf-item div span, .wf .hf-rules span, .wf .hf-total div { color: #6b6b6b; }
 .wf .hf-add { background: #2b2b2b; }
-.wf .hf-bar { color: #9a9a9a; }
+.wf .hf-bar { color: #6b6b6b; }
 .wf .hf-bar .on { color: #2b2b2b; text-decoration: underline; text-underline-offset: 3px; }
 .wf .hf-bar i { background: #2b2b2b; }
 .wf .hf-big > b { color: #2b2b2b; }
@@ -450,3 +452,10 @@ body.on-case { background: var(--board); background-image: none; }
 .wf .hf-total .g { color: #2b2b2b; }
 .wf .hf-cta { background: #2b2b2b; }
 .wf .hf-total .t { color: #2b2b2b; }
+
+.hf-row.wf.small { gap: 24px; max-width: 860px; }
+.wf.small .hf-phone { zoom: .76; }
+.wf.small .hf figcaption { font-size: 14px; max-width: 230px; }
+.wf.small .hf figcaption b { font-size: 16px; }
+@media (max-width: 960px) { .hf-row.wf.small { grid-template-columns: 1fr 1fr 1fr; } }
+@media (max-width: 700px) { .hf-row.wf.small { grid-template-columns: 1fr; } }
