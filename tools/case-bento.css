@@ -459,3 +459,9 @@ body.on-case { background: var(--board); background-image: none; }
 .wf.small .hf figcaption b { font-size: 16px; }
 @media (max-width: 960px) { .hf-row.wf.small { grid-template-columns: 1fr 1fr 1fr; } }
 @media (max-width: 700px) { .hf-row.wf.small { grid-template-columns: 1fr; } }
+
+/* capa do case dos cupons */
+.case-cover { margin: var(--s-block) 0 12px; border-radius: 28px; overflow: hidden; background: #fff; }
+.case-cover img { display: block; width: 100%; aspect-ratio: 16 / 8; object-fit: cover; object-position: 60% 35%; }
+.case-cover figcaption { font-size: 13px; color: var(--c-text-2); padding: 12px 18px; }
+@media (max-width: 700px) { .case-cover img { aspect-ratio: 4 / 3; } }
