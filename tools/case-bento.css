@@ -505,3 +505,14 @@ body.on-case { background: var(--board); background-image: none; }
 .lab-open { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); border: 0; background: var(--lime); color: #121212; font: 800 18px var(--display); padding: 18px 30px; border-radius: 999px; cursor: pointer; box-shadow: 0 16px 30px -14px #000a; }
 .lab-open:hover { transform: translate(-50%, -50%) scale(1.04); }
 @media (prefers-reduced-motion: reduce) { .ba-img { transition: none; } }
+
+/* antes/depois em vai-e-volta */
+.ba-view .ba-img { transition: none; opacity: 1 !important; }
+.ba-view .ba-img-antes { clip-path: inset(0 calc(100% - var(--p)) 0 0); }
+.ba-line { position: absolute; top: 0; bottom: 0; left: var(--p); width: 3px; margin-left: -1.5px; background: var(--lime); box-shadow: 0 0 0 1px #0002, 0 0 24px 4px #c5f04a99; opacity: 0; transition: opacity .2s; pointer-events: none; }
+.ba-view.moving .ba-line { opacity: 1; }
+.ba-label { position: absolute; bottom: 16px; font: 800 18px var(--display); padding: 8px 18px; border-radius: 999px; transition: opacity .3s; pointer-events: none; }
+.ba-label-antes { left: 16px; background: #121212; color: #fff; }
+.ba-label-depois { right: 16px; background: var(--lime); color: #121212; }
+.ba-view[data-side="antes"] .ba-label-depois, .ba-view[data-side="depois"] .ba-label-antes { opacity: 0; }
+@media (max-width: 700px) { .ba-label { font-size: 14px; padding: 6px 12px; bottom: 10px; } }
