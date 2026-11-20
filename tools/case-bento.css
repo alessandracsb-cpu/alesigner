@@ -1,3 +1,9 @@
+/* fotos da imersão (case dos cupons) */
+.photo-tall img { aspect-ratio: 1 / 1; object-fit: cover; object-position: center 35%; }
+.photo-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.photo-pair img { aspect-ratio: 5 / 4; object-fit: cover; }
+@media (max-width: 760px) { .photo-pair { grid-template-columns: 1fr; } }
+
 /* capítulo 01: dores de plataforma e de serviço */
 .pain-stack { display: grid; gap: 12px; }
 .before-panel.service { background: #fff !important; color: var(--ink) !important; }
