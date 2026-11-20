@@ -258,3 +258,15 @@ body.on-case { background: var(--board); background-image: none; }
 .lightbox img { height: 100%; min-height: 600px; width: auto; max-width: none; display: block; }
 .theme-switch { display: none !important; }
 @media (prefers-reduced-motion: reduce) { .bp-hint i { animation: none; } }
+
+/* blueprint: dimensão sem entregar o mapa */
+.bp-teaser { position: relative; border-radius: var(--r); overflow: hidden; background: #0e0f12; padding: clamp(18px, 3vw, 32px); }
+.bp-overview { display: block; width: 100%; height: auto; border-radius: 12px; opacity: .75; }
+.bp-detail { position: absolute; right: clamp(18px, 4vw, 56px); top: 50%; transform: translateY(-50%); width: min(32%, 320px); border-radius: 16px; overflow: hidden; border: 3px solid #fff; box-shadow: 0 30px 60px -20px #000c; background: #0e0f12; }
+.bp-detail img { display: block; width: 100%; height: auto; }
+.bp-detail-tag { position: absolute; bottom: 10px; left: 10px; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 999px; background: var(--t-lime); color: #121212; }
+.bp-teaser figcaption { margin-top: 14px; font-size: 13px; color: #ffffffb3; max-width: 55%; }
+@media (max-width: 760px) {
+  .bp-detail { position: relative; right: auto; top: auto; transform: none; width: 100%; margin-top: 14px; }
+  .bp-teaser figcaption { max-width: none; }
+}
