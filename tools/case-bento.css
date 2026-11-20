@@ -535,3 +535,12 @@ body.cases-dark .cmp-lbls .la.on { background: #fff; color: #121212; }
 @keyframes cmp-nudge { 0%, 100% { translate: 0; } 30% { translate: -12px; } 65% { translate: 12px; } }
 @media (max-width: 700px) { .cmp-knob { width: 34px; height: 34px; margin: -17px 0 0 -17px; } .cmp-lbls span { display: none; } }
 @media (prefers-reduced-motion: reduce) { .cmp.cmp-nudge .cmp-knob { animation: none; } }
+
+/* V1: bloco curto, sem destaque */
+.v1-note { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(20px, 4vw, 48px); align-items: center; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--c-line); }
+.v1-note figure { margin: 0; border-radius: 14px; overflow: hidden; box-shadow: 0 1px 0 #0001, 0 16px 40px -24px #0005; }
+.v1-note img { display: block; width: 100%; height: auto; }
+.v1-note .k { font: 700 12px var(--body); text-transform: uppercase; letter-spacing: .08em; color: var(--c-text-2); }
+.v1-note h3 { font: 800 clamp(22px, 2.4vw, 28px)/1.15 var(--display); letter-spacing: -.02em; margin: 8px 0 10px; color: var(--c-text); }
+.v1-note p { margin: 0; color: var(--c-text); max-width: 44ch; }
+@media (max-width: 700px) { .v1-note { grid-template-columns: 1fr; } }
