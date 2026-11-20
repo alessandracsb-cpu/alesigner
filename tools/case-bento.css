@@ -566,3 +566,4 @@ body.cases-dark .lab-cta small { color: #121212b3; }
 /* rodapé do comparador: botão colado na legenda, não solto na direita */
 .ba-foot { flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 14px; margin-top: 16px; }
 .ba-foot .ba-cap { max-width: 70ch; }
+.ba-wrap .lab-cta { margin: 0 0 22px; }
