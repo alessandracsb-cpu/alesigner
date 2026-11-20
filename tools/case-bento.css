@@ -318,3 +318,9 @@ body.on-case { background: var(--board); background-image: none; }
 .chapter.finale .chapter-meta h2 { font-size: clamp(44px, 6vw, 80px); }
 .chapter.finale .chapter-num { background: #121212; color: var(--lime); }
 .chapter.finale .lab { margin-top: 8px; }
+
+/* subtítulo do case */
+.case-sub { font-size: clamp(18px, 2vw, 22px); line-height: 1.45; color: var(--c-text); max-width: 46ch; margin-top: 20px; }
+.case-hero h1.h-split { max-width: none; }
+.h-split > span { display: block; white-space: nowrap; }
+@media (max-width: 600px) { .h-split > span { white-space: normal; } }
