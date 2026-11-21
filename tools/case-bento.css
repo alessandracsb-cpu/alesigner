@@ -586,12 +586,3 @@ body.cases-dark .lab-cta small { color: #121212b3; }
 .lab-modal.mobile .lab-modal-body iframe { width: min(390px, 100%); }
 body.wos-modal-on { overflow: hidden; }
 @media (max-width: 700px) { .lab-modal { padding: 10px; } .lab-modal-dev { display: none; } }
-
-/* plataforma navegável logo no topo do case */
-.hero-lab-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
-.hero-lab-k { display: inline-flex; align-items: center; gap: 8px; font: 700 15px var(--body); color: var(--c-text); }
-.hero-lab-k i { width: 9px; height: 9px; border-radius: 50%; background: #2fbf5b; box-shadow: 0 0 0 4px #2fbf5b26; }
-.hero-lab-full { border: 0; cursor: pointer; font: 700 14px var(--body); padding: 10px 18px; border-radius: 999px; background: #121212; color: #fff; }
-.hero-lab-full:hover { background: var(--lime); color: #121212; }
-.hero-lab-full:focus-visible { outline: 3px solid #7d97ff; outline-offset: 3px; }
-body.cases-dark .hero-lab-full { background: var(--lime); color: #121212; }
