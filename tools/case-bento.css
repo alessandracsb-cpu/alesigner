@@ -617,3 +617,5 @@ body.cases-dark .shot-box { background: #1c1c1c; }
 .img-todo { display: grid; place-items: center; min-height: 260px; margin-top: 28px; padding: 24px; border: 2px dashed #00000030; border-radius: var(--r); font-size: 14px; font-weight: 600; color: var(--c-text-2); text-align: center; }
 .img-todo.tall { min-height: 320px; margin-top: 0; }
 body.cases-dark .o2c-chain { background: #1c1c1c; }
+.seq-shot.o2c-wide { max-width: none; }
+.chapter-content.solo-o2c { grid-template-columns: 1fr; max-width: 820px; }
