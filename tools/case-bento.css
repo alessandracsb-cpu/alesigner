@@ -595,4 +595,9 @@ body.wos-modal-on { overflow: hidden; }
 .photo-pair.trio { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 @media (max-width: 760px) { .photo-pair.trio { grid-template-columns: 1fr; } }
 
-.result-block .nps-line.v-camp { margin-top: 22px; }
+.res-duo { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 8px; }
+.res-duo .nps-line { flex-wrap: nowrap; }
+.res-duo .nps-line .result-num { font-size: clamp(48px, 5vw, 72px); }
+.res-duo .nps-line .from { font-size: clamp(26px, 2.6vw, 36px); }
+.res-duo p { margin-top: 8px; font-size: 15px; line-height: 1.45; }
+@media (max-width: 560px) { .res-duo { grid-template-columns: 1fr; } }
