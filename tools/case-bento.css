@@ -591,3 +591,6 @@ body.wos-modal-on { overflow: hidden; }
 .seq-shot { margin: 32px 0 0; max-width: 760px; }
 .seq-shot img { display: block; width: 100%; height: auto; border-radius: 14px; box-shadow: 0 0 0 1px var(--c-line), 0 20px 40px -28px #0006; }
 .seq-shot figcaption { margin-top: 10px; font-size: 14px; line-height: 1.5; color: var(--c-text-2); max-width: 64ch; }
+
+.photo-pair.trio { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 760px) { .photo-pair.trio { grid-template-columns: 1fr; } }
