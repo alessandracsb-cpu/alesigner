@@ -608,3 +608,12 @@ body.wos-modal-on { overflow: hidden; }
 .shot-box .shot-pair .chapter-shot img { aspect-ratio: 1 / 1; object-fit: cover; }
 .shot-box .sb-wide img { aspect-ratio: 16 / 9; object-fit: cover; }
 body.cases-dark .shot-box { background: #1c1c1c; }
+
+/* Order to Cash (rascunho) */
+.o2c-chain { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 28px; padding: 20px; border-radius: var(--r); background: #fff; }
+.o2c-chain span { font-size: 14px; font-weight: 600; padding: 8px 12px; border-radius: 10px; background: var(--t-yellow); color: #121212; }
+.o2c-chain span + span:not(.o2c-k)::before { content: '→ '; opacity: .45; }
+.o2c-chain .o2c-k { background: #121212; color: #fff; }
+.img-todo { display: grid; place-items: center; min-height: 260px; margin-top: 28px; padding: 24px; border: 2px dashed #00000030; border-radius: var(--r); font-size: 14px; font-weight: 600; color: var(--c-text-2); text-align: center; }
+.img-todo.tall { min-height: 320px; margin-top: 0; }
+body.cases-dark .o2c-chain { background: #1c1c1c; }
