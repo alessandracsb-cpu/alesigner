@@ -601,3 +601,10 @@ body.wos-modal-on { overflow: hidden; }
 .res-duo .nps-line .from { font-size: clamp(26px, 2.6vw, 36px); }
 .res-duo p { margin-top: 8px; font-size: 15px; line-height: 1.45; }
 @media (max-width: 560px) { .res-duo { grid-template-columns: 1fr; } }
+
+/* cupons · capítulo 05: as três imagens do processo num container branco */
+.shot-box { background: #fff; border-radius: var(--r); padding: 12px; display: grid; gap: 12px; align-self: start; }
+.shot-box .chapter-shot { background: none; }
+.shot-box .shot-pair .chapter-shot img { aspect-ratio: 1 / 1; object-fit: cover; }
+.shot-box .sb-wide img { aspect-ratio: 16 / 9; object-fit: cover; }
+body.cases-dark .shot-box { background: #1c1c1c; }
