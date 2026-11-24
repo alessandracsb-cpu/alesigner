@@ -586,3 +586,8 @@ body.cases-dark .lab-cta small { color: #121212b3; }
 .lab-modal.mobile .lab-modal-body iframe { width: min(390px, 100%); }
 body.wos-modal-on { overflow: hidden; }
 @media (max-width: 700px) { .lab-modal { padding: 10px; } .lab-modal-dev { display: none; } }
+
+/* sequenciador do case de cupons: evidência pequena, com legenda junto */
+.seq-shot { margin: 32px 0 0; max-width: 760px; }
+.seq-shot img { display: block; width: 100%; height: auto; border-radius: 14px; box-shadow: 0 0 0 1px var(--c-line), 0 20px 40px -28px #0006; }
+.seq-shot figcaption { margin-top: 10px; font-size: 14px; line-height: 1.5; color: var(--c-text-2); max-width: 64ch; }
