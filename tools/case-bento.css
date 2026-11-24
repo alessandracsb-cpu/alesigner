@@ -594,3 +594,5 @@ body.wos-modal-on { overflow: hidden; }
 
 .photo-pair.trio { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 @media (max-width: 760px) { .photo-pair.trio { grid-template-columns: 1fr; } }
+
+.result-block .nps-line.v-camp { margin-top: 22px; }
